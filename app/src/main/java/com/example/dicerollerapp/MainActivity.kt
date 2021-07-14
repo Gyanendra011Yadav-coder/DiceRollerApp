@@ -2,6 +2,7 @@ package com.example.dicerollerapp
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,10 @@ class MainActivity : AppCompatActivity() {
     }
 // CREATING THIS TO CALL THE DICE METHOD AND PASS THE SIDES
     private fun rollDice (){
+    //THIS, WILL ADD THE IMAGE
+    val diceImage: ImageView =findViewById(R.id.imageView)
+    //PROVIDING THE RESOUCE OF THE IMAGE SO, IT CAN BE FETCHED
+    diceImage.setImageResource(R.drawable.dice_2)
         //calling the Dice method
         val dice =Dice(6)
         //CALLLING THE roll method to, TO ROLL THE DICE
