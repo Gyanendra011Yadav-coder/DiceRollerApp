@@ -20,4 +20,10 @@ class MainActivity : AppCompatActivity() {
             toast.show()
         }
     }
+    /*THIS IS THE METHOD THAT WILL ROLL THE DICE*/
+    class Dice(val Sides: Int){
+        fun roll():Int{
+            return (1..Sides).random()
+        }
+    }
 }
