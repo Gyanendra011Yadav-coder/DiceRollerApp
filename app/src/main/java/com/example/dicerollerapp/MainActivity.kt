@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -17,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener {
             //CALLLING THE rollDice method
             rollDice()
-         val toast=   Toast.makeText(this,"DICE ROLLED SUCCESSFULLY!",Toast.LENGTH_LONG)
-            toast.show()
+         //val toast=   Toast.makeText(this,"DICE ROLLED SUCCESSFULLY!",Toast.LENGTH_LONG)
+          //  toast.show()
         }
     }
 // CREATING THIS TO CALL THE DICE METHOD AND PASS THE SIDES
