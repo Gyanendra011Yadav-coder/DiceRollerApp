@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //CREATING THIS TO MAKE THE APP, INTERACTIVE
         val rollButton : Button = findViewById(R.id.button)
-        
+        rollButton.setOnClickListener {
+
+        }
     }
 }
