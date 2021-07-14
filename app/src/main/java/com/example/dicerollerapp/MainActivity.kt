@@ -14,12 +14,23 @@ class MainActivity : AppCompatActivity() {
         val rollButton : Button = findViewById(R.id.button)
         // We create this so that it can be seen after button click
         rollButton.setOnClickListener {
-            val resultTextView: TextView=findViewById(R.id.textView)
-            resultTextView.text="6"
+            //CALLLING THE rollDice method
+            rollDice()
          val toast=   Toast.makeText(this,"DICE ROLLED SUCCESSFULLY!",Toast.LENGTH_LONG)
             toast.show()
         }
     }
+// CREATING THIS TO CALL THE DICE METHOD AND PASS THE SIDES
+    private fun rollDice (){
+        //calling the Dice method
+        val dice =Dice(6)
+        //CALLLING THE roll method to, TO ROLL THE DICE
+        val roll=dice.roll()
+        val resultTextView: TextView=findViewById(R.id.textView)
+        resultTextView.text=roll.toString()
+
+    }
+
     /*THIS IS THE METHOD THAT WILL ROLL THE DICE*/
     class Dice(val Sides: Int){
         fun roll():Int{
