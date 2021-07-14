@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         3->diceImage.setImageResource(R.drawable.dice_3)
         4->diceImage.setImageResource(R.drawable.dice_4)
         5->diceImage.setImageResource(R.drawable.dice_5)
-        6->diceImage.setImageResource(R.drawable.dice_6)
+        else->diceImage.setImageResource(R.drawable.dice_6)
     }
 
     }
