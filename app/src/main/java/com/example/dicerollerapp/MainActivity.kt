@@ -23,16 +23,23 @@ class MainActivity : AppCompatActivity() {
     }
 // CREATING THIS TO CALL THE DICE METHOD AND PASS THE SIDES
     private fun rollDice (){
-    //THIS, WILL ADD THE IMAGE
-    val diceImage: ImageView =findViewById(R.id.imageView)
-    //PROVIDING THE RESOUCE OF THE IMAGE SO, IT CAN BE FETCHED
-    diceImage.setImageResource(R.drawable.dice_2)
-        //calling the Dice method
+    //calling the Dice method
         val dice =Dice(6)
-        //CALLLING THE roll method to, TO ROLL THE DICE
+    //CALLLING THE roll method to, TO ROLL THE DICE
         val roll=dice.roll()
         val resultTextView: TextView=findViewById(R.id.textView)
         resultTextView.text=roll.toString()
+    //THIS, WILL ADD THE IMAGE
+        val diceImage: ImageView =findViewById(R.id.imageView)
+  //we are checking,
+    when(roll){
+        1->diceImage.setImageResource(R.drawable.dice_1)
+        2->diceImage.setImageResource(R.drawable.dice_2)
+        3->diceImage.setImageResource(R.drawable.dice_3)
+        4->diceImage.setImageResource(R.drawable.dice_4)
+        5->diceImage.setImageResource(R.drawable.dice_5)
+        6->diceImage.setImageResource(R.drawable.dice_6)
+    }
 
     }
 
