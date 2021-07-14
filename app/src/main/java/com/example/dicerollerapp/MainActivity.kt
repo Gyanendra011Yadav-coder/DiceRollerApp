@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         //CREATING THIS TO MAKE THE APP, INTERACTIVE
         val rollButton : Button = findViewById(R.id.button)
         rollButton.setOnClickListener {
-            Toast.makeText(this,"DICE ROLLED SUCCESSFULLY!",Toast.LENGTH_LONG)
+         val toast=   Toast.makeText(this,"DICE ROLLED SUCCESSFULLY!",Toast.LENGTH_LONG)
         }
     }
 }
